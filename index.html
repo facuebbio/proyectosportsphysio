@@ -2,22 +2,32 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="../sportsphysio/assets/images/running.png">
+        <link rel="shortcut icon" href="../assets/images/running.png">
         <link rel="stylesheet" href="../css/style.css">
         <title>Home</title>
     </head>
     <body>
-        <header  id="header1">
+        <header id="header1">
             <nav>
                 <!--Menu principal--> 
-                    <ul>
-                        <h1 id="logo_id">SportsPhysio</h1>
-                        <li><a href="">Home</a></li>
-                        <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
-                        <li><a href="./pages/servicios.html">Servicios</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                        <li><a href="./pages/turnosonline.html">Turnos online</a></li>
-                    </ul>
+                <ul class="nav justify-content-end">
+                    <h1 id="logo_id">SportsPhysio</h1>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/quienessomos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/turnosonline.html">TURNOS ONLINE</a>
+                    </li>
+                </ul>
             </nav>
         </header> 
             <div>
@@ -34,16 +44,35 @@
                     <p>¡Descubrinos!</p>
                 <br>
             </div>
-                <div class="division">
-                    <video  width="460" height="292" controls>
+                <!-- <div class="division">
+                    <video class="img-fluid" width="460" height="292" controls>
                         <source src="../assets/videos/theragun.mov" type="video/mp4">
                     </video>
-                    <img src="../assets/images/tenis2.PNG" width="430" height="270">
-                    <img src="../assets/images/tenis1.PNG" width="575" height="306">
-                    <img src="../assets/images/tug.heic" width="332" height="444">
-                    <img src="../assets/images/cervical.PNG" width="332" height="444">
-                    <img src="../assets/images/gameday.jpg" width="332" height="444">
+                <img src="../assets/images/tenis2.PNG" class="img-fluid"  width="430" height="270" alt="...">
+                <img src="../assets/images/tenis1.PNG" class="img-fluid" width="575" height="306" alt="...">
+                <img src="../assets/images/tug.heic" class="img-fluid" width="332" height="444" alt="...">
+                <img src="../assets/images/cervical.PNG" class="img-fluid" width="332" height="444" alt="...">
+                <img src="../assets/images/gameday.jpg" class="img-fluid" width="332" height="444" alt="...">
+            </div> -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/tenis2.PNG" class="d-block w-100" width="430" height="270" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/tenis1.PNG" class="d-block w-100"  width="575" height="306" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/tug.heic" class="d-block w-100" width="332" height="444" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/cervical.PNG" class="d-block w-100"width="332" height="444" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/gameday.jpg" class="d-block w-100" width="332" height="444" alt="...">
+                    </div>
                 </div>
+            </div>
                 <!--Lista Desordenada-->
                 <div>
                     <h3>Especialidades</h3>

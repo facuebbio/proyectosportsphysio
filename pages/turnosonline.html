@@ -10,30 +10,53 @@
         <header id="header1">
             <nav>
                 <!--Menu principal--> 
-                <ul>
-                    <h1 id="logo_id"> SportsPhysio</h1>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="quienessomos.html">Quienes somos</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="">Turnos online</a></li>
+                <ul class="nav justify-content-end">
+                    <h1 id="logo_id">SportsPhysio</h1>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienessomos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">TURNOS ONLINE</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         
         <h1 id="h1_id">Iniciar sesion</h1>
         <br>
-        <div id="chart_move">
-            <div id="chart">
-                <label for="fdni"><p id="Idp" >Dni:</label>
-                <input type="number;" id="fdni" required>
-                <br>
-                <label for="fcontraseña"><p id="Idp">Contraseña:</label>
-                <input type="password" id="fcontraseña" required>
-                <br>
-                <input type="submit">
-            </div>
+    <div id="chart"></div>
+        <div id="chart_move" class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
+            <label for="floatingInput">Email</label>
         </div>
+        <div id="chart_move" class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="contraseña">
+            <label for="floatingPassword">Contraseña</label>
+            <input type="submit">
+        </div>
+    </div>
+
+
+            <!-- <div id="chart_move">
+                <div id="chart">
+                    <label for="fdni"><p id="Idp" >Dni:</label>
+                    <input type="number;" id="fdni" required>
+                    <br>
+                    <label for="fcontraseña"><p id="Idp">Contraseña:</label>
+                    <input type="password" id="fcontraseña" required>
+                    <br>
+                    <input type="submit">
+                </div>
+            </div> -->
             <!--Pie de pagina-->
             <footer id="footer_turnos">
                 <a href="https://www.facebook.com/licfacundoebbio-103053261441623" ><img src="../assets/images/facebook.png" alt="facebook" width="48px" height="48px"></a>
