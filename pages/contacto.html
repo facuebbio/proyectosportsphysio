@@ -1,65 +1,89 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="../assets/images/running.png">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Contacto</title>
-    </head>
-    <body>
-        <header id="header1">
-            <nav>
-                <!--Menu principal--> 
-                <ul class="nav justify-content-end">
-                    <h1 id="logo_id">SportsPhysio</h1>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./quienessomos.html">QUIENES SOMOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./turnosonline.html">TURNOS ONLINE</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-            <h1 id="h1_id">Contacto</h1>
-                <p id="pcontacto">Dejanos tu mensaje y nos comunicaremos a la brevedad</p>
-        <br>
-        <form>
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="shortcut icon" href="../assets/images/running.png">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <link rel="stylesheet" href="../css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Contacto</title>
+        </head>
+        <body>
+            <header id="header1">
+            <h1 id="logo_id">SportsPhysio</h1>
+                <nav>
+                    <!--Menu principal--> 
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienessomos.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./turnosonline.html">TURNOS ONLINE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+                <h1 id="h1_id">Contacto</h1>
+                    <p id="pcontacto">Dejanos tu mensaje y nos comunicaremos a la brevedad</p>
+            <br>
             <div id="chart_move">
-                <div id="chart">
-                    <label for="fnombre"><p id="Idp">Nombre:</p></label>
-                    <input type="text" id="fnombre" required>
-                    <label for="fapellido"><p id="Idp">Apellido:</p></label>
-                    <input type="text" id="fapellido" required>
-                    <label for="femail"><p id="Idp">Email:</p></label>
-                    <input type="email" id="femail" required>
-                    <p id="Idp">Hombre</p>
-                    <input type="radio" name="sexo" value="Hombre">
-                    <p id="Idp">Mujer</p>
-                    <input type="radio" name="sexo" value="Mujer">
-                    <br>
-                    <textarea></textarea>
-                    <input type="submit">
+            <form id="chart">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Nombre y Apellido *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Email requerido</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Telefono *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Numero de telefono requerido</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje requerido</div>
+                        </div>
+                    </div>
                 </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Gracias por contactarnos!</div>
+                        A la brevedad nos estaremos comunicando con vos!
+                        
+                    </div>
+                </div>
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensaje</button></div>
+                </form>
             </div>
-        </form>
-            <!--Pie de pagina-->
-        <footer>
-            <a href="https://www.facebook.com/licfacundoebbio-103053261441623" ><img src="../assets/images/facebook.png" alt="facebook" width="48px" height="48px"></a>
-            <a href="https://www.instagram.com/lic.facundoebbio/"><img src="../assets/images/instagram.png" alt="instagram" width="48px" height="48px" ></a>
-            <a href="https://www.linkedin.com/in/facundo-andrea-ebbio-b21548142/"><img src="../assets/images/linkedin.png" alt="linkedin" width="48px" height="48px"></a>
-            <!--Copyright-->
-        <p class="text-center p-3" id="CopyrightID"> &copy; Todos los derechos reservados</p>
-            <!--Copyright-->
-        </footer>
-    </body>
-</html>
+        </div>
+                <!--Pie de pagina-->
+            <footer>
+                <a href="https://www.facebook.com/licfacundoebbio-103053261441623" ><img src="../assets/images/facebook.png" alt="facebook" width="48px" height="48px"></a>
+                <a href="https://www.instagram.com/lic.facundoebbio/"><img src="../assets/images/instagram.png" alt="instagram" width="48px" height="48px" ></a>
+                <a href="https://www.linkedin.com/in/facundo-andrea-ebbio-b21548142/"><img src="../assets/images/linkedin.png" alt="linkedin" width="48px" height="48px"></a>
+                <!--Copyright-->
+            <p class="text-center p-3" id="CopyrightID"> &copy; Todos los derechos reservados</p>
+                <!--Copyright-->
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </body>
+    </html>

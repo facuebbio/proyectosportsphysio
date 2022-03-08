@@ -7,7 +7,7 @@
 
 
 .PrimeraClase {
-    color: #8c8cb4 ;
+    color: #0d6efd ;
 }
 
 #logo_id {
@@ -15,7 +15,10 @@
     font-size: 2rem;
     font-family: Oswald,sans-serif;
     justify-content: start;
-    padding: 26px 17px;
+    text-align: start;
+    padding: 0px 0px;
+    font-weight: 200;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     
@@ -39,22 +42,19 @@
 
 #header1 {
     background-color: transparent;
-    background-image: linear-gradient(to bottom,#3b3bcfd7, white);
+    background-image: linear-gradient(to bottom,black, white);
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row-start: auto;
-    grid-row-end: auto;
-    justify-content: end;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-between;
     align-content: flex-end;
+    row-gap: 10px;
     font-family: Oswald,sans-serif;
     margin: 0px;
     padding: 0;
-    font-size: 10px;
-    font-weight: 300;
-    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -70,12 +70,12 @@ ul {
 
 
 li {
-    padding: 20px;
+    padding: 15px;
     margin: 0px;
     border: none;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     font-family: Oswald,sans-serif;
     display: inline-block;
     
@@ -87,10 +87,11 @@ nav ul li a:hover {
     border: none;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     font-family: Oswald,sans-serif;
     display: inline-block;
-    transition: all 2s;
+    transition: linear 1s;
+
 }
 
 
@@ -107,12 +108,12 @@ h1 {
 }
 
 #h1_id {
-    color: #8c8cb4;
+    color: #0d6efd;
     font-size: 2rem;
     font-family: Oswald,sans-serif;
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     text-decoration: none;
     text-transform: uppercase;
     justify-content: center;
@@ -122,7 +123,7 @@ h1 {
 h3 {
     font-size: 2rem;
     font-family: Oswald,sans-serif;
-    color: #8c8cb4;
+    color: #0d6efd;
     text-align: center;
     padding: 10px;
     margin: 10px;
@@ -172,33 +173,42 @@ input:focus {
 
 
 .TarjetaServicios:hover {
+    
     margin: 10px;
     padding: 10px;
     display: inline-block;
     text-align: center;
+    font-size: larger;
     border: none;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 3s;
+    transition: linear 1s;
 }
 
-#servicios_id {
-    background-color: #8c8cb4;
+
+#servicios_id{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-image: radial-gradient(#0d6efd, white);
     justify-content: center;
     text-align: center;
     border-radius: 0px;
     padding: 0px;
     margin: 0px;
+    transition: linear 2s;
 }
 
 #especialidades_id {
-    background-color: #8c8cb4;
+    background-image: linear-gradient(to bottom,rgb(59, 59, 59), white);
     justify-content: center;
     text-align: center;
     border-radius: 0px;
     padding: 0px;
     margin: 0px;
-
+    text-transform: uppercase;
+    transition: linear 1s;
+    cursor: pointer;
 }
 
 .TarjetaImagen {
@@ -242,7 +252,7 @@ footer {
 #CopyrightID {
     margin: 0px;
     padding: 0px;
-    text-align: right;
+    text-align: start;
 }
 
 
@@ -271,9 +281,11 @@ footer {
 
 #destacado_blanco:hover {
     color: whitesmoke;
-    font-weight: 300;
+    font-weight: 200;
+    font-size: large;
     text-transform: uppercase;
-    
+    transition: all 2s;
+    cursor: pointer;
 
 }
 
